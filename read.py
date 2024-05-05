@@ -16,3 +16,4 @@ def land_info():
         for i in line: 
             print(kitta,"\t ", i.replace(","," \t"))
             kitta+=1
+buy_land()

@@ -34,7 +34,8 @@ def rent_land():
             per_month_price_land = per_month_price
             total_price = month_ * per_month_price_land
             user_land.append(list([bill_kitta, anna, month_, per_month_price_land, total_price]))
-            land_data[kitta][4] = "Not Available"
+            land_data[kitta][4] = "Not Available" 
+            change(land_data)
         more = input("Do you want more (y/n): ")
         print(user_land)
         if more.lower() != 'y':
@@ -49,7 +50,6 @@ def rent_land():
             print("\n")
             print("Name of the customer:", name, "\n")
             print("Phone of the customer:", phone, "\n")
-
             print("-" * 90)
             print("\t \t  Kitta no \t \t Anna \t \t Month \t \t Price \t\t Total")
             print("-" * 90)
@@ -82,5 +82,3 @@ def return_land():
         anna_land = int(land_data[kitta][2])
 
 
-
-rent_land()
