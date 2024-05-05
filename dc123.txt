@@ -1,11 +1,11 @@
 
 	TechnoRental Property
  	 	 	 	 Kathmandu	 	 	 Contact no: 97458436 || Email: dfhv@gmail.com
-Name of the customer: ff
-Phone of the customer: 21
+Name of the customer: dc
+Phone of the customer: 123
 ----------------------------------------	 	 	 Kitta no 	 Anna 	 Month 	 Price 	 Total----------------------------------------
 
-	 	 	ff	 	 	21	 	 	101	 	 	4	 	 	4
-The grand total is 150000
+	 	 	dc	 	 	123	 	 	101	 	 	4	 	 	4
+The grand total is 100000
 
 Thank you for using
