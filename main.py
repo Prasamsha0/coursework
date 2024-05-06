@@ -1,6 +1,6 @@
 from datetime import datetime
-from operation import rent_land
-
+from operation import rent_land,return_land
+from write import invoices
 
 def main():
 
@@ -17,44 +17,9 @@ def main():
             user_input =input("Enter the option the option you want to continue") 
             input_=False
         if user_input == "1":
-            rent_land() 
+           rent_land()
         elif user_input == "2":
-
-            problem=True
-            while problem:
-                name=input("enter your name")
-                if name.isalpha():
-                    problem=False
-                Phone=str(input("enter your phone number"))
-                if len(Phone)==10 and Phone.isdigit:
-                    problem=False
-            kitta=int(input("enter the kitta no."))
-            
-            with open("land.txt", "r") as file:
-                mydictionary = {}
-                kitta = 101
-                for line in file:
-                    line = line.replace("\n", "")
-                    print(kitta, "\t", line)
-                    mydictionary[kitta] = line.split(',')
-                    kitta += 1
-            
-            print("Below are the options:")
-            print("\n")
-            print("-------------Kitta no \t District \t Direction \t Anna \t Price \t Availability-------------")
-            return_Land=int(input("Enter the kitta no. you want to return"))
-            with open("land.txt", "r") as file:
-                mydictionary = {}
-                kitta = 101
-                for line in file:
-                    line = line.replace("\n", "")
-                    print(kitta, "\t", line)
-                    mydictionary[kitta] = line.split(',')
-                    kitta += 1 
-            print("Thank you for returning")
-            
-
-            
+            return_land()
         elif user_input == "3":
             print("Thank you for using our service")
             loop=False

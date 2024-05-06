@@ -4,7 +4,7 @@ def buy_land():
     with open("land.txt", "r") as file:
         kitta=101
         for line in file:
-            line = line.replace("\n", ", ")
+            line = line.replace("\n", "")
             land_data[kitta] = line.split(",")
             kitta += 1
     return land_data
@@ -14,6 +14,7 @@ def land_info():
     with open("land.txt","r") as line:
         kitta=101
         for i in line: 
-            print(kitta,"\t ", i.replace(","," \t"))
+            i=i.replace(","," \t")
+            print(kitta,"\t ", i.replace("\n"," "))
             kitta+=1
-buy_land()
+
